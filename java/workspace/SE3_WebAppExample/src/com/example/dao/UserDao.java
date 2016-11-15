@@ -14,7 +14,7 @@ import com.example.exceptions.DaoException;
 public class UserDao extends Dao {
 	
 	//new code-----------------------------------------------------------------------------------------------------
-	public User getAllUsers() throws DaoException{
+	public List<User> getAllUsers() throws DaoException{
 		
 		Connection con = null;
         PreparedStatement ps = null;
@@ -34,7 +34,8 @@ public class UserDao extends Dao {
                 String password = rs.getString("PASSWORD");
                 String lastname = rs.getString("LAST_NAME");
                 String firstname = rs.getString("FIRST_NAME");
-                u = (List<User>) new User(userId, firstname, lastname, username, password);
+                User user = new User(userId,firstname,lastname,username,password);
+                u.add(user);
             }
         } catch (SQLException e) {
             throw new DaoException("getAllUsers " + e.getMessage());
@@ -53,7 +54,7 @@ public class UserDao extends Dao {
                 throw new DaoException("getAllUsers " + e.getMessage());
             }
         }
-        return (User) u;     // u may be null 
+        return u;     // u may be null 
 	}
 	
 	

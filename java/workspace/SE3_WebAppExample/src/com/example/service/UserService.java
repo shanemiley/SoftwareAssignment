@@ -12,16 +12,16 @@ public class UserService {
 	
 	//new code ---------------------------------------------------------------------------------------------------------
 	
-	public User getAllUsers(){
+	public List<User> getAllUsers(){
 		
 		List<User> u = null;
 		try {			
-			u = (List<User>) dao.getAllUsers();
+			u = dao.getAllUsers();
 		} 
 		catch (DaoException e) {
 			e.printStackTrace();
 		}
-		return (User) u;
+		return u;
 		
 	}
 	

@@ -23,7 +23,7 @@ public class User implements Serializable{
 		setPassword(password);
 	}
 	
-	public int getId() {
+	public int getUserId() {
 		return id;
 	}
 	public void setId(int id) {
@@ -38,7 +38,7 @@ public class User implements Serializable{
 	public String getLastName() {
 		return lastName;
 	}
-	public void setLastName(String lastName) {
+	public void setLastName(String lastname) {
 		this.lastName = lastName;
 	}
 	public String getUsername() {
