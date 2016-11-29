@@ -1,0 +1,5 @@
+127.0.0.1 - - [29/Nov/2016:10:29:30 +0000] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [29/Nov/2016:10:29:31 +0000] "GET /SE3_WebAppExample/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Nov/2016:10:29:42 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 818
+0:0:0:0:0:0:0:1 - - [29/Nov/2016:10:29:55 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 818
+0:0:0:0:0:0:0:1 - - [29/Nov/2016:10:29:57 +0000] "POST /SE3_WebAppExample/FrontController HTTP/1.1" 200 2550
